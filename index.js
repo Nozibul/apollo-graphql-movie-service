@@ -1,15 +1,16 @@
-const { ApolloServer } = require("@apollo/server");
-const { startStandaloneServer } = require("@apollo/server/standalone");
+// index.js
+import { ApolloServer } from "@apollo/server";
+import { startStandaloneServer } from "@apollo/server/standalone";
+import { typeDefs } from "./schema/typeDefs.js";
+import { resolvers } from "./resolvers/resolvers.js";
 
-// definition and your set of resolvers.
 const server = new ApolloServer({
-    typeDefs,
-    resolvers,
-  });
-  
-  // The `listen` method launches a web server.
-  const { url } = await startStandaloneServer(server, {
-    listen: { port: 4001 },
-  });
-  
-  console.log(`Server ready at: ${url}`);
+  typeDefs,
+  resolvers,
+});
+
+const { url } = await startStandaloneServer(server, {
+  listen: { port: 4001 },
+});
+
+console.log(`Server ready at: ${url}`);
