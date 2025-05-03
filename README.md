@@ -1,3 +1,18 @@
+# GraphQL Server Practice
+
+A practice GraphQL server project built using **Node.js**, **Apollo Server**, and **GraphQL schema definitions**. This project demonstrates how to build a simple movie-director database with fully functional queries and mutations, following GraphQL best practices.
+
+
+## 🚀 Features
+
+- GraphQL server setup using Apollo Server
+- Schema definition with `Movie` and `Director` types
+- Query and Mutation implementation
+- Nested resolvers for relationships
+- Sample in-memory data
+- Input types for structured mutations
+
+
 ### Requerment
 ### structure
 movies {
