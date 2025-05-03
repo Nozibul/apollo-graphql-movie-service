@@ -1,5 +1,5 @@
-#### Requerment
-// structure
+### Requerment
+### structure
 movies {
     id,
     title,
@@ -19,15 +19,15 @@ director {
     movies               
 }
 
-// Data
-### 1. **List of Movies**
-### 2. **List of Directors**
-### 3. **List of Movies with Their Directors**
-### 4. **List of Directors with Their Movies**
+### Data
+#### 1. **List of Movies**
+#### 2. **List of Directors**
+#### 3. **List of Movies with Their Directors**
+#### 4. **List of Directors with Their Movies**
 
 ---
 
-### ✅ 1. **List of Movies**
+#### ✅ 1. **List of Movies**
 ```graphql
 query {
   movies {
@@ -43,7 +43,7 @@ query {
 
 ---
 
-### ✅ 2. **List of Directors**
+#### ✅ 2. **List of Directors**
 ```graphql
 query {
   directors {
@@ -58,7 +58,7 @@ query {
 
 ---
 
-### ✅ 3. **List of Movies with Their Directors**
+#### ✅ 3. **List of Movies with Their Directors**
 ```graphql
 query {
   movies {
@@ -77,7 +77,7 @@ query {
 
 ---
 
-### ✅ 4. **List of Directors with Their Movies**
+#### ✅ 4. **List of Directors with Their Movies**
 
 ```graphql
 query {
